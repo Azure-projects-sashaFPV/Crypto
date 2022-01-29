@@ -40,3 +40,4 @@ D:\GitHub\ASP.Net\Final_Azure\Crypto\Crypto\obj\Debug\net5.0\Crypto.genruntimeco
 D:\GitHub\ASP.Net\Final_Azure\Crypto\Crypto\obj\Debug\net5.0\Crypto.csproj.CopyComplete
 D:\GitHub\ASP.Net\Final_Azure\Crypto\Crypto\obj\Debug\net5.0\Razor\Views\Home\Chart.cshtml.g.cs
 D:\GitHub\ASP.Net\Final_Azure\Crypto\Crypto\obj\Debug\net5.0\Razor\Views\Home\News.cshtml.g.cs
+D:\GitHub\ASP.Net\Final_Azure\Crypto\Crypto\obj\Debug\net5.0\Razor\Views\Home\Videos.cshtml.g.cs

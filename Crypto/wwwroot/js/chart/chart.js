@@ -15,5 +15,5 @@ let massPopChart = new Chart(myChart, {
                 fill: true
             }
         ],
-    },
+    }
 });

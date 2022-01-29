@@ -20,53 +20,53 @@
     <div class="container-fluid">
         <header class="header-area">
 
-        <!-- Navbar Area -->
-        <div class="cryptos-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Menu -->
-                    <nav class="classy-navbar justify-content-between" id="cryptosNav">
-
-                        <!-- Logo -->
-                        <a class="nav-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/core-img/logo.png" alt=""></a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
+            <!-- Navbar Area -->
+            <div class="cryptos-main-menu">
+                <div class="classy-nav-container breakpoint-off">
+                    <div class="container">
                         <!-- Menu -->
-                        <div class="classy-menu">
+                        <nav class="classy-navbar justify-content-between" id="cryptosNav">
 
-                            <!-- close btn -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            <!-- Logo -->
+                            <a class="nav-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/core-img/logo.png" alt=""></a>
+
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
                             </div>
 
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Chart">Chart</a></li>
-                                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="News">News</a></li>
-                                </ul>
+                            <!-- Menu -->
+                            <div class="classy-menu">
 
-                                <!-- Newsletter Form -->
-                                <div class="header-newsletter-form">
-                                    <form action="#" method="post">
-                                        <input type="email" name="email" id="email" placeholder="Newsletter">
-                                        <button type="submit">Subscribe</button>
-                                    </form>
+                                <!-- close btn -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                                 </div>
 
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Chart">Chart</a></li>
+                                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="News">News</a></li>
+                                    </ul>
+
+                                    <!-- Newsletter Form -->
+                                    <div class="header-newsletter-form">
+                                        <form action="#" method="post">
+                                            <input type="email" name="email" id="email" placeholder="Newsletter">
+                                            <button type="submit">Subscribe</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <!-- Nav End -->
                             </div>
-                            <!-- Nav End -->
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -181,5 +181,7 @@
     <script src="~/js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="~/js/active.js"></script>
+    <!-- MyChart -->
+    <script src="~/js/chart/chart.js" defer></script>
 </body>
 </html>

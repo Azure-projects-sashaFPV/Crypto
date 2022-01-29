@@ -9,60 +9,7 @@
 <section class="cryptos-blog-area section-padding-100">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-7">
-                <div class="blog-area">
-                    <!-- Single Blog Area -->
-                    <div class="single-blog-area d-flex align-items-start">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="~/img/blog-img/1.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                            <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                            <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
-                        </div>
-                    </div>
-                    <!-- Single Blog Area -->
-                    <div class="single-blog-area d-flex align-items-start">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="~/img/blog-img/2.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">New Hedge Funds invests in Crypto</a>
-                            <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                            <p>Iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis. Ut in iaculis enim.</p>
-                        </div>
-                    </div>
-                    <!-- Single Blog Area -->
-                    <div class="single-blog-area d-flex align-items-start">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="~/img/blog-img/3.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                            <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                            <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-4">
                 <div class="cryptos-prices-table">
 
                     <!-- Single Price Table -->
@@ -186,7 +133,16 @@
                     </div>
 
                 </div>
+                <button id="getCurrency">Click me</button>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="chart-area" style="border:1px solid black; height:500px">
+                    <canvas id="chart"></canvas>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js" type="text/javascript"></script>
+
+    <script src="~/js/chart/chart.js"></script>
 </section>

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3N56oHVsKoRNqlcfPFXPCwrWmbsJCnZFor91CAmN3QNulWDZ80BqFdJ1DPZuafbH1y/0eXna9VREkWE01RKBwQ==",
+  "dgSpecHash": "RfIs10s0vth7CMsKqVDWWKc98xDfht/VnhlQG2+SKR+VlaH04UtrjukBurfxHikkI9H9h8+K/lhxdPkSZemWhA==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\ASP.Net\\Final_Azure\\Crypto\\Crypto\\Crypto.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\chart.js\\2.9.3\\chart.js.2.9.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -30,6 +30,10 @@ namespace Crypto.Controllers
         {
             return View();
         }
+        public IActionResult Videos()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

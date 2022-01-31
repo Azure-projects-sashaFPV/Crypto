@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Crypto.Models.CryptoModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="preloader">
+    <i class="circle-preloader"></i>
+</div>
+<section class="cryptos-blog-area section-padding-30">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4">
+                <div class="cryptos-prices-table">
+                    @{ 
+                        int count = 1;
+                        string c = "";
+                        string path = "";
+                    }
+                    @foreach (var item in Model)
+                    {
+                        path = $"https://storagesashafpv.blob.core.windows.net/crypto-icons/{count}.png";
+                        <div class="single-price-table d-flex align-items-center justify-content-between crypto-item">
+                            <div class="p-content d-flex align-items-center" id="my-invisible">
+                                @if (count < 10)
+                                {
+                                    c = $"0{count}";
+                                    <span id="my-invisible">@c</span>
+                                }
+                                else
+                                {
+                                    <span id="my-invisible">@count</span>
+                                }
+                                <img src="@path" style="width:30px" alt="" id="my-invisible">
+                                <p id="my-invisible">@Html.DisplayFor(modelItem => item.CryptoName) <span id="my-invisible">@Html.DisplayFor(modelItem => item.CryptoAbbreviation)</span></p>
+                            </div>
+                            <div class="price increase" id="my-invisible">
+                                <p id="my-invisible">$@Html.DisplayFor(modelItem => item.CurrentPrice)</p>
+                            </div>
+                        </div>
+                        count++;
+                    }
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-8">
+                <canvas id="chart" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js" type="text/javascript"></script>
+    <script src="~/js/chart/chart.js"></script>
+</section>

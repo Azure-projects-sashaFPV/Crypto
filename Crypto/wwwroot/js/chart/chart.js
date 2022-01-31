@@ -46,10 +46,11 @@ const getChart = (symbol, name) => {
             prices[i] = item.price;
             i++;
         }
-        console.log(dates);
+        //console.log(dates);
         //console.log(`Name : ${name}`);
         //console.log(`Response : ${response}`);
         // -------------------------------------------------------------
+        massPopChart.destroy(); // !!!
         massPopChart = new Chart(myChart, {
             type: "line",
             backgroundColor: 'rgb(42,48,66)',
@@ -79,8 +80,11 @@ class Currency {
     }
 }
 
-$('#data_button').click(() => { 
-    getChart('ETH', 'ETH');
+$('.crypto-item').click((event) => {
+    console.log(event);
+    let abbreviation = event.target.firstElementChild.lastElementChild.lastElementChild.outerText;
+    let crypto_name = event.target.firstElementChild.lastElementChild.textContent;
+    getChart(abbreviation, crypto_name);
 });
 
 const formatDate = (date) => {

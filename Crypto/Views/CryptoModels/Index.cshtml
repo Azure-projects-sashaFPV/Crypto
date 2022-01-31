@@ -13,7 +13,7 @@
         <div class="row align-items-center">
             <div class="col-12 col-lg-4">
                 <div class="cryptos-prices-table">
-                    @{ 
+                    @{
                         int count = 1;
                         string c = "";
                         string path = "";
@@ -21,24 +21,24 @@
                     @foreach (var item in Model)
                     {
                         path = $"https://storagesashafpv.blob.core.windows.net/crypto-icons/{count}.png";
-                        <div class="single-price-table d-flex align-items-center justify-content-between crypto-item">
-                            <div class="p-content d-flex align-items-center" id="my-invisible">
-                                @if (count < 10)
+                    <div class="single-price-table d-flex align-items-center justify-content-between crypto-item">
+                        <div class="p-content d-flex align-items-center" id="my-invisible">
+                            @if (count < 10)
                                 {
                                     c = $"0{count}";
-                                    <span id="my-invisible">@c</span>
+                            <span id="my-invisible">@c</span>
                                 }
                                 else
                                 {
-                                    <span id="my-invisible">@count</span>
+                            <span id="my-invisible">@count</span>
                                 }
-                                <img src="@path" style="width:30px" alt="" id="my-invisible">
-                                <p id="my-invisible">@Html.DisplayFor(modelItem => item.CryptoName) <span id="my-invisible">@Html.DisplayFor(modelItem => item.CryptoAbbreviation)</span></p>
-                            </div>
-                            <div class="price increase" id="my-invisible">
-                                <p id="my-invisible">$@Html.DisplayFor(modelItem => item.CurrentPrice)</p>
-                            </div>
+                            <img src="@path" style="width:30px" alt="" id="my-invisible">
+                            <p id="my-invisible">@Html.DisplayFor(modelItem => item.CryptoName) <span id="my-invisible">@Html.DisplayFor(modelItem => item.CryptoAbbreviation)</span></p>
                         </div>
+                        <div class="price decrease" id="my-invisible current_price">
+                            <p id="my-invisible">$@Html.DisplayFor(modelItem => item.CurrentPrice)</p>
+                        </div>
+                    </div>
                         count++;
                     }
 

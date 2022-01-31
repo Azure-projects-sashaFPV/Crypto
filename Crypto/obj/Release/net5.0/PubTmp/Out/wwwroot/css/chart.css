@@ -1,0 +1,11 @@
+﻿.crypto-item {
+    cursor:pointer;
+    transition-delay:100ms;
+    transition: 500ms;
+}
+.crypto-item:hover {
+    background-color: rgb(220, 225, 228);
+}
+#my-invisible {
+    pointer-events: none;
+}

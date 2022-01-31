@@ -6,3 +6,6 @@
 .crypto-item:hover {
     background-color: rgb(220, 225, 228);
 }
+#my-invisible {
+    pointer-events: none;
+}

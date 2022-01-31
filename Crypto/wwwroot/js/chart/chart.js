@@ -19,7 +19,7 @@ let massPopChart = new Chart(myChart, {
 });
 
 const getChart = (symbol, name) => {
-    var burl = `https://api.binance.com/api/v3/klines?symbol=${symbol}USDT&interval=1m&limit=20`;
+    var burl = `https://api.binance.com/api/v3/klines?symbol=${symbol}USDT&interval=1w&limit=40`;
     let mass = [];
     var url = burl;
     var ourRequest = new XMLHttpRequest();
@@ -39,7 +39,6 @@ const getChart = (symbol, name) => {
             let resultDate = formatDate(date);
             mass[count++] = new Currency(resultDate, item[4]);
         }
-
 
         let i = 0;
         for (let item of mass) {
